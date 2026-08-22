@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#191A1E"/>
+      <stop offset="1" stop-color="#0C0D10"/>
+    </linearGradient>
+    <radialGradient id="vig" cx="0.5" cy="0.42" r="0.9">
+      <stop offset="0.55" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <path d="M170 620 C 120 460, 260 330, 420 360 C 600 395, 680 520, 610 650 C 540 780, 250 790, 170 620 Z" fill="none" stroke="#E8E8E8" stroke-opacity="0.65" stroke-width="2.5"/><path d="M230 600 C 200 480, 300 390, 430 420 C 570 452, 620 540, 565 630 C 505 730, 280 720, 230 600 Z" fill="none" stroke="#E8E8E8" stroke-opacity="0.45" stroke-width="2.5"/><path d="M300 580 C 285 500, 355 450, 445 470 C 540 492, 565 555, 520 615 C 470 680, 320 660, 300 580 Z" fill="none" stroke="#E8E8E8" stroke-opacity="0.3" stroke-width="2.5"/><circle cx="430" cy="540" r="6" fill="#FF5A1F"/><path d="M540 300 C 580 260, 640 260, 668 300" fill="none" stroke="#D9C7A6" stroke-opacity="0.5" stroke-width="2"/>
+  <rect width="800" height="1000" fill="url(#vig)"/>
+  <rect x="1.5" y="1.5" width="797" height="997" fill="none" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="3" rx="2"/>
+  <text x="36" y="960" font-family="'JetBrains Mono', monospace" font-size="24" letter-spacing="4" fill="#8F8F93">AMG_03 / FLUID</text>
+  <circle cx="748" cy="952" r="7" fill="#FF5A1F"/>
+</svg>

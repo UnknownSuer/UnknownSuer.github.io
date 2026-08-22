@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#191A1E"/>
+      <stop offset="1" stop-color="#0C0D10"/>
+    </linearGradient>
+    <radialGradient id="vig" cx="0.5" cy="0.42" r="0.9">
+      <stop offset="0.55" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <line x1="120" y1="470" x2="330" y2="470" stroke="#E8E8E8" stroke-opacity="0.6" stroke-width="1.6"/><line x1="470" y1="470" x2="680" y2="470" stroke="#E8E8E8" stroke-opacity="0.6" stroke-width="1.6"/><line x1="400" y1="260" x2="400" y2="400" stroke="#E8E8E8" stroke-opacity="0.6" stroke-width="1.6"/><line x1="400" y1="540" x2="400" y2="680" stroke="#E8E8E8" stroke-opacity="0.6" stroke-width="1.6"/><circle cx="400" cy="470" r="64" fill="none" stroke="#E8E8E8" stroke-opacity="0.75" stroke-width="2"/><circle cx="400" cy="470" r="4" fill="#FF5A1F"/><path d="M 70 134 L 70 90 L 114 90" fill="none" stroke="#E8E8E8" stroke-opacity="0.8" stroke-width="3"/><path d="M 730 134 L 730 90 L 686 90" fill="none" stroke="#E8E8E8" stroke-opacity="0.8" stroke-width="3"/><path d="M 70 806 L 70 850 L 114 850" fill="none" stroke="#E8E8E8" stroke-opacity="0.8" stroke-width="3"/><path d="M 730 806 L 730 850 L 686 850" fill="none" stroke="#E8E8E8" stroke-opacity="0.8" stroke-width="3"/><circle cx="118" cy="150" r="9" fill="#FF5A1F"/><rect x="140" y="139" width="66" height="22" fill="none" stroke="#E8E8E8" stroke-opacity="0.5" stroke-width="1.4"/><line x1="0" y1="333.3333333333333" x2="800" y2="333.3333333333333" stroke="#E8E8E8" stroke-opacity="0.12" stroke-width="1"/><line x1="0" y1="666.6666666666666" x2="800" y2="666.6666666666666" stroke="#E8E8E8" stroke-opacity="0.12" stroke-width="1"/><line x1="266.6666666666667" y1="0" x2="266.6666666666667" y2="1000" stroke="#E8E8E8" stroke-opacity="0.12" stroke-width="1"/><line x1="533.3333333333334" y1="0" x2="533.3333333333334" y2="1000" stroke="#E8E8E8" stroke-opacity="0.12" stroke-width="1"/>
+  <rect width="800" height="1000" fill="url(#vig)"/>
+  <rect x="1.5" y="1.5" width="797" height="997" fill="none" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="3" rx="2"/>
+  <text x="36" y="960" font-family="'JetBrains Mono', monospace" font-size="24" letter-spacing="4" fill="#8F8F93">AMG_12 / HUD</text>
+  <circle cx="748" cy="952" r="7" fill="#FF5A1F"/>
+</svg>

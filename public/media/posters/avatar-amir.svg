@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <defs>
+    <linearGradient id="abg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1B1C20"/>
+      <stop offset="1" stop-color="#0C0D10"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#abg)"/>
+  <circle cx="400" cy="330" r="150" fill="#26282C"/>
+  <path d="M170 800 C 170 620, 280 540, 400 540 C 520 540, 630 620, 630 800 Z" fill="#26282C"/>
+  <ellipse cx="400" cy="330" rx="150" ry="150" fill="none" stroke="#E8E8E8" stroke-opacity="0.28" stroke-width="2"/>
+  <ellipse cx="400" cy="330" rx="66" ry="150" fill="none" stroke="#E8E8E8" stroke-opacity="0.2" stroke-width="1.5"/>
+  <ellipse cx="400" cy="330" rx="118" ry="150" fill="none" stroke="#E8E8E8" stroke-opacity="0.14" stroke-width="1.5"/>
+  <line x1="250" y1="330" x2="550" y2="330" stroke="#E8E8E8" stroke-opacity="0.2" stroke-width="1.5"/>
+  <circle cx="475" cy="290" r="8" fill="#FF5A1F"/>
+  <text x="60" y="746" font-family="'JetBrains Mono', monospace" font-size="26" letter-spacing="5" fill="#8F8F93">AMIGO_KIZ</text>
+</svg>

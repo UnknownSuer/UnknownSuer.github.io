@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#191A1E"/>
+      <stop offset="1" stop-color="#0C0D10"/>
+    </linearGradient>
+    <radialGradient id="vig" cx="0.5" cy="0.42" r="0.9">
+      <stop offset="0.55" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <circle cx="80.1" cy="670.2" r="89.2" fill="none" stroke="#E8E8E8" stroke-opacity="0.26" stroke-width="1.6"/><circle cx="303.9" cy="355.0" r="71.6" fill="#E8E8E8" fill-opacity="0.05"/><circle cx="157.8" cy="144.2" r="25.6" fill="none" stroke="#E8E8E8" stroke-opacity="0.29" stroke-width="1.6"/><circle cx="311.2" cy="424.3" r="35.4" fill="none" stroke="#E8E8E8" stroke-opacity="0.38" stroke-width="1.6"/><circle cx="148.5" cy="741.5" r="24.3" fill="#E8E8E8" fill-opacity="0.09"/><circle cx="259.8" cy="566.9" r="93.2" fill="none" stroke="#E8E8E8" stroke-opacity="0.23" stroke-width="1.6"/><circle cx="335.6" cy="172.6" r="65.7" fill="none" stroke="#E8E8E8" stroke-opacity="0.24" stroke-width="1.6"/><circle cx="412.0" cy="342.6" r="91.0" fill="#E8E8E8" fill-opacity="0.09"/><circle cx="185.0" cy="445.8" r="92.7" fill="#E8E8E8" fill-opacity="0.12"/><circle cx="149.0" cy="322.2" r="69.2" fill="#E8E8E8" fill-opacity="0.10"/><circle cx="226.1" cy="698.0" r="87.8" fill="#E8E8E8" fill-opacity="0.08"/><circle cx="610.4" cy="176.3" r="20.5" fill="none" stroke="#E8E8E8" stroke-opacity="0.34" stroke-width="1.6"/><circle cx="230.4" cy="541.8" r="93.9" fill="none" stroke="#E8E8E8" stroke-opacity="0.30" stroke-width="1.6"/><circle cx="288.2" cy="602.7" r="67.2" fill="#E8E8E8" fill-opacity="0.05"/><circle cx="413.1" cy="198.1" r="20.8" fill="#E8E8E8" fill-opacity="0.07"/><circle cx="380.1" cy="301.9" r="53.3" fill="none" stroke="#E8E8E8" stroke-opacity="0.23" stroke-width="1.6"/><circle cx="560" cy="330" r="46" fill="#FF5A1F" fill-opacity="0.28"/>
+  <rect width="800" height="1000" fill="url(#vig)"/>
+  <rect x="1.5" y="1.5" width="797" height="997" fill="none" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="3" rx="2"/>
+  <text x="36" y="960" font-family="'JetBrains Mono', monospace" font-size="24" letter-spacing="4" fill="#8F8F93">AMG_08 / BOKEH</text>
+  <circle cx="748" cy="952" r="7" fill="#FF5A1F"/>
+</svg>

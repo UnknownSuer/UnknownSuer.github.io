@@ -1,0 +1,89 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # A repo named exactly "<owner>.github.io" is a user/org page and
+      # serves at the root domain. Any other repo name is a project page
+      # and GitHub serves it under a "/<repo-name>/" subpath, so the
+      # Next.js export needs a matching basePath or every asset 404s.
+      - name: Compute base path / site URL
+        id: vars
+        run: |
+          OWNER_LOWER=$(echo "${GITHUB_REPOSITORY%%/*}" | tr '[:upper:]' '[:lower:]')
+          REPO_NAME="${GITHUB_REPOSITORY#*/}"
+          REPO_LOWER=$(echo "$REPO_NAME" | tr '[:upper:]' '[:lower:]')
+          if [ "$REPO_LOWER" = "$OWNER_LOWER.github.io" ]; then
+            echo "base_path=" >> "$GITHUB_OUTPUT"
+            echo "site_url=https://$REPO_LOWER" >> "$GITHUB_OUTPUT"
+          else
+            echo "base_path=/$REPO_NAME" >> "$GITHUB_OUTPUT"
+            echo "site_url=https://$OWNER_LOWER.github.io/$REPO_NAME" >> "$GITHUB_OUTPUT"
+          fi
+
+      # GitHub Pages only serves static files and cannot run the
+      # /api/leads route handler (it writes to local disk). Drop it
+      # for the static export build only; it stays in the repo for
+      # a real backend deployment (VPS/Directus, see README).
+      - name: Remove server-only API route (unsupported on static export)
+        run: rm -rf src/app/api
+
+      - name: Build static export
+        run: npm run build
+        env:
+          NEXT_PUBLIC_BASE_PATH: ${{ steps.vars.outputs.base_path }}
+          NEXT_PUBLIC_SITE_URL: ${{ steps.vars.outputs.site_url }}
+          # Хеш пароля админки (/admin). Пока секрет не задан, панель
+          # управления не открывается ни у кого — см. ADMIN.md.
+          NEXT_PUBLIC_ADMIN_PASS_HASH: ${{ secrets.ADMIN_PASS_HASH }}
+          # Куда уходят заявки: свой бэкенд, CRM или форм-сервис. Без него
+          # формы показывают запасной путь (Telegram/почта).
+          NEXT_PUBLIC_LEADS_ENDPOINT: ${{ secrets.LEADS_ENDPOINT }}
+          # Боевая авторизация учеников по телефону + SMS, когда поднят бэкенд.
+          NEXT_PUBLIC_STUDENT_API: ${{ secrets.STUDENT_API }}
+
+      - name: Add .nojekyll
+        run: touch out/.nojekyll
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

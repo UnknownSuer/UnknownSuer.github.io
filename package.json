@@ -1,0 +1,40 @@
+{
+  "name": "angar-site",
+  "version": "0.1.0",
+  "private": true,
+  "description": "АНГАР — сайт AmigoKiz Production: VFX, CGI, UGC и обучение",
+  "scripts": {
+    "dev": "next dev",
+    "prebuild": "node scripts/sync-content-overlay.mjs",
+    "build": "next build",
+    "start": "next start",
+    "test": "vitest run",
+    "posters": "node scripts/generate-posters.mjs",
+    "logo": "node scripts/generate-logo.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/golos-text": "^5.3.0",
+    "@fontsource-variable/jetbrains-mono": "^5.3.0",
+    "@fontsource-variable/unbounded": "^5.3.0",
+    "@hookform/resolvers": "^5.2.0",
+    "@radix-ui/react-accordion": "^1.2.0",
+    "@radix-ui/react-dialog": "^1.1.0",
+    "@reduxjs/toolkit": "^2.9.0",
+    "next": "^16.3.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-hook-form": "^7.60.0",
+    "react-redux": "^9.2.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.0",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "postcss": "^8.5.0",
+    "tailwindcss": "^4.1.0",
+    "typescript": "^5.9.0",
+    "vitest": "^3.2.0"
+  }
+}

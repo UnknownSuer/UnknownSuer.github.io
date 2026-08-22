@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#191A1E"/>
+      <stop offset="1" stop-color="#0C0D10"/>
+    </linearGradient>
+    <radialGradient id="vig" cx="0.5" cy="0.42" r="0.9">
+      <stop offset="0.55" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <line x1="0" y1="560" x2="800" y2="560" stroke="#E8E8E8" stroke-opacity="0.7" stroke-width="2"/><line x1="400" y1="560" x2="-880" y2="1000" stroke="#E8E8E8" stroke-opacity="0.3" stroke-width="1.5"/><line x1="400" y1="560" x2="-720" y2="1000" stroke="#E8E8E8" stroke-opacity="0.3" stroke-width="1.5"/><line x1="400" y1="560" x2="-560" y2="1000" stroke="#E8E8E8" stroke-opacity="0.3" stroke-width="1.5"/><line x1="400" y1="560" x2="-400" y2="1000" stroke="#E8E8E8" stroke-opacity="0.3" stroke-width="1.5"/><line x1="400" y1="560" x2="-240" y2="1000" stroke="#E8E8E8" stroke-opacity="0.3" stroke-width="1.5"/><line x1="400" y1="560" x2="-80" y2="1000" stroke="#E8E8E8" stroke-opacity="0.3" stroke-width="1.5"/><line x1="400" y1="560" x2="80" y2="1000" stroke="#E8E8E8" stroke-opacity="0.3" stroke-width="1.5"/><line x1="400" y1="560" x2="240" y2="1000" stroke="#E8E8E8" stroke-opacity="0.3" stroke-width="1.5"/><line x1="400" y1="560" x2="400" y2="1000" stroke="#E8E8E8" stroke-opacity="0.3" stroke-width="1.5"/><line x1="400" y1="560" x2="560" y2="1000" stroke="#E8E8E8" stroke-opacity="0.3" stroke-width="1.5"/><line x1="400" y1="560" x2="720" y2="1000" stroke="#E8E8E8" stroke-opacity="0.3" stroke-width="1.5"/><line x1="400" y1="560" x2="880" y2="1000" stroke="#E8E8E8" stroke-opacity="0.3" stroke-width="1.5"/><line x1="400" y1="560" x2="1040" y2="1000" stroke="#E8E8E8" stroke-opacity="0.3" stroke-width="1.5"/><line x1="400" y1="560" x2="1200" y2="1000" stroke="#E8E8E8" stroke-opacity="0.3" stroke-width="1.5"/><line x1="400" y1="560" x2="1360" y2="1000" stroke="#E8E8E8" stroke-opacity="0.3" stroke-width="1.5"/><line x1="400" y1="560" x2="1520" y2="1000" stroke="#E8E8E8" stroke-opacity="0.3" stroke-width="1.5"/><line x1="400" y1="560" x2="1680" y2="1000" stroke="#E8E8E8" stroke-opacity="0.3" stroke-width="1.5"/><line x1="0" y1="574.0" x2="800" y2="574.0" stroke="#E8E8E8" stroke-opacity="0.25" stroke-width="1.2"/><line x1="0" y1="594.3" x2="800" y2="594.3" stroke="#E8E8E8" stroke-opacity="0.25" stroke-width="1.2"/><line x1="0" y1="623.7" x2="800" y2="623.7" stroke="#E8E8E8" stroke-opacity="0.25" stroke-width="1.2"/><line x1="0" y1="666.4" x2="800" y2="666.4" stroke="#E8E8E8" stroke-opacity="0.25" stroke-width="1.2"/><line x1="0" y1="728.3" x2="800" y2="728.3" stroke="#E8E8E8" stroke-opacity="0.25" stroke-width="1.2"/><line x1="0" y1="818.0" x2="800" y2="818.0" stroke="#E8E8E8" stroke-opacity="0.25" stroke-width="1.2"/><line x1="0" y1="948.2" x2="800" y2="948.2" stroke="#E8E8E8" stroke-opacity="0.25" stroke-width="1.2"/><circle cx="400" cy="430" r="72" fill="none" stroke="#FF5A1F" stroke-opacity="0.9" stroke-width="2.5"/><circle cx="400" cy="430" r="34" fill="#FF5A1F" fill-opacity="0.22"/>
+  <rect width="800" height="1000" fill="url(#vig)"/>
+  <rect x="1.5" y="1.5" width="797" height="997" fill="none" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="3" rx="2"/>
+  <text x="36" y="960" font-family="'JetBrains Mono', monospace" font-size="24" letter-spacing="4" fill="#8F8F93">AMG_05 / GRID</text>
+  <circle cx="748" cy="952" r="7" fill="#FF5A1F"/>
+</svg>

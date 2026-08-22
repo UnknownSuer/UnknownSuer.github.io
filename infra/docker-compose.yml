@@ -1,0 +1,44 @@
+# Инфраструктура фазы 2: PostgreSQL + Directus (CMS).
+# Запуск: docker compose up -d  (из папки infra/)
+# Перед запуском заменить все change-me / random-значения.
+name: angar-infra
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: angar
+      POSTGRES_PASSWORD: change-me
+      POSTGRES_DB: angar
+    volumes:
+      - pg-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  directus:
+    image: directus/directus:11
+    restart: unless-stopped
+    depends_on:
+      - postgres
+    ports:
+      - "8055:8055"
+    environment:
+      # Сгенерировать: node -e "console.log(crypto.randomUUID())"
+      KEY: replace-with-random-uuid
+      SECRET: replace-with-random-uuid
+      DB_CLIENT: pg
+      DB_HOST: postgres
+      DB_PORT: "5432"
+      DB_DATABASE: angar
+      DB_USER: angar
+      DB_PASSWORD: change-me
+      ADMIN_EMAIL: admin@amigokiz.ru
+      ADMIN_PASSWORD: change-me-strong
+      PUBLIC_URL: http://localhost:8055
+    volumes:
+      - directus-uploads:/directus/uploads
+
+volumes:
+  pg-data:
+  directus-uploads:

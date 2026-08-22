@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#191A1E"/>
+      <stop offset="1" stop-color="#0C0D10"/>
+    </linearGradient>
+    <radialGradient id="vig" cx="0.5" cy="0.42" r="0.9">
+      <stop offset="0.55" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <circle cx="400" cy="430" r="265" fill="none" stroke="#E8E8E8" stroke-opacity="0.6" stroke-width="2"/><ellipse cx="400" cy="231.3" rx="175.3" ry="28.0" fill="none" stroke="#E8E8E8" stroke-opacity="0.35" stroke-width="1.5"/><ellipse cx="400" cy="310.8" rx="236.7" ry="37.9" fill="none" stroke="#E8E8E8" stroke-opacity="0.35" stroke-width="1.5"/><ellipse cx="400" cy="390.3" rx="262.0" ry="41.9" fill="none" stroke="#E8E8E8" stroke-opacity="0.35" stroke-width="1.5"/><ellipse cx="400" cy="469.8" rx="262.0" ry="41.9" fill="none" stroke="#E8E8E8" stroke-opacity="0.35" stroke-width="1.5"/><ellipse cx="400" cy="549.3" rx="236.7" ry="37.9" fill="none" stroke="#E8E8E8" stroke-opacity="0.35" stroke-width="1.5"/><ellipse cx="400" cy="628.8" rx="175.3" ry="28.0" fill="none" stroke="#E8E8E8" stroke-opacity="0.35" stroke-width="1.5"/><ellipse cx="400" cy="430" rx="66.3" ry="265" fill="none" stroke="#E8E8E8" stroke-opacity="0.35" stroke-width="1.5"/><ellipse cx="400" cy="430" rx="145.8" ry="265" fill="none" stroke="#E8E8E8" stroke-opacity="0.35" stroke-width="1.5"/><ellipse cx="400" cy="430" rx="225.3" ry="265" fill="none" stroke="#E8E8E8" stroke-opacity="0.35" stroke-width="1.5"/><circle cx="590.8" cy="324" r="8" fill="#FF5A1F"/>
+  <rect width="800" height="1000" fill="url(#vig)"/>
+  <rect x="1.5" y="1.5" width="797" height="997" fill="none" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="3" rx="2"/>
+  <text x="36" y="960" font-family="'JetBrains Mono', monospace" font-size="24" letter-spacing="4" fill="#8F8F93">AMG_01 / WIRE</text>
+  <circle cx="748" cy="952" r="7" fill="#FF5A1F"/>
+</svg>
